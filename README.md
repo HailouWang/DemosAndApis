@@ -101,3 +101,8 @@ dependencies {
 ```
 > **注：**为方便演示,避免创建Activity，本例子使用了activity-alias，但与activity-alias或activity无关，只与Activity Label有关。
 
+# 四、打赏
+
+请扫描下方的二维码随意打赏，要是能打赏个 10.24，要是能打赏个 10.24 就太👍了。
+
+![](https://github.com/HailouWang/testUrl/blob/master/erweima.png)
