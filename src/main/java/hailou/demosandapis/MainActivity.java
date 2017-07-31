@@ -59,10 +59,12 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             return data;
         }
         int currentIndex = 0;
+        String prefexWithSlash = prefix;
         if (prefix == null || "".equals(prefix)) {
             prefix = "";
         } else {
             currentIndex = prefix.split("/").length;
+            prefexWithSlash = prefix + "/";
         }
         // 2、遍历listActivities列表
         Map<String, Object> itemMap = new HashMap<String, Object>();
@@ -79,7 +81,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             }
 
             // 4、合法数据，要么prefix为“”，或者label以prefix为前缀
-            if ("".equals(prefix) || label.startsWith(prefix)) {
+            if ("".equals(prefix) || label.startsWith(/*prefix*/prefexWithSlash)) {
                 // 5、获得即将要展示的Label
                 String[] labelArray = label.split("/");
                 String nextLabel = labelArray[currentIndex];
