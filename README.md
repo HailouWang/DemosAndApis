@@ -1,5 +1,4 @@
-# DemosForApi
-ApiDemos 框架，根据Activity 名称，自动加载测试界面
+# Getting Started Developing
 
 # 一、简介
 
@@ -14,34 +13,15 @@ ApiDemos 框架，根据Activity 名称，自动加载测试界面
 ## 1、新建Android 工程。
 [Android Studio 创建Android项目](http://www.jianshu.com/p/8ea262166fd1)
 
-## 2、克隆如下项目到任意目录，建议在工程目录。
+## 2、配置模块
 
-```
-ifei$: cd 工程目录
-ifei$: git clone https://github.com/HailouWang/DemosAndApis.git
-```
-目录中会产生一个DemosAndApis的文件夹。
-
-## 3、加载Androd Module到工程中。
-- 3.1、如果不在工程目录，需要将模块Import 进来。
-  - 3.1、点击 File > New > Import Module。
-  - 3.2、输入库模块目录的位置，然后点击 Finish。
-
-- 3.2、工程gradle配置
-在工程的settings.gradle中，增加Module(demosandapis)配置：
-
-```
-include ':app',':demosandapis'
-```
-
-- 3.3、app目录下Gradle配置
-在app目录下的build.gradle中，增加Module(demosandapis)编译依赖：
+在app模块的build.gradle中，添加配置如下：
 
 ```
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile fileTree(include: ['*.jar'], dir: 'libs')
 ...
-    compile project(":demosandapis") 
+    compile 'ifei.hailou:DemosAndApis:1.0.0'
 }
 ```
 
