@@ -8,6 +8,8 @@
 
 通过配置Activity Label，将展示、跳转交给Module，将更多的精力放在ApiSample的编写。
 
+备注：参考谷歌Andriod ApiDemos源代码~
+
 # 二、参考如下必要的配置步骤：
 
 ## 1、新建Android 工程。
