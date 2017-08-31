@@ -21,7 +21,7 @@
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
 ...
-    compile 'ifei.hailou:DemosAndApis:1.0.0'
+    compile 'com.github.hailouwang:DemosAndApis:1.0.3'
 }
 ```
 
